@@ -1,0 +1,152 @@
+<!doctype html>
+<!-- DOCTYPE informa ao agente de usario a versao do HTML que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+    <title> Google </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Francisco Marcello">
+        <meta name=description content="nada">
+        <meta name="keywords" content="Teste,HTML">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel = "shortcut icon" type = "imagem/x-icon" href = "Icone.png">
+        
+        <style>
+            body{ 
+                background: white;
+                margin: 0;
+                padding: 0;
+                font-family: arial, sans-serif;
+                
+            }
+            ul{
+                text-align: right;
+                position: relative;
+                right:1%;
+                bottom: 125px;
+                font-size: 14px; 
+                
+            }
+            li{
+                list-style-type: none;
+                display: inline-block;
+                margin-left: 10px;   
+            }
+            .icons{
+                font-size: 25px;
+                margin-left: 20px;
+                
+            }
+            .usuario img{
+                border-radius: 50%;
+                padding: 0;
+                height: auto;
+                position: relative;
+                top: 10px;
+                
+              }
+            li:last-child{
+                margin-right: 20px;
+            }
+   
+            
+            
+            a{
+                 color: #777777;
+                text-decoration: none;
+               
+            }
+            a:hover{
+                text-decoration: underline;
+                
+            }
+            img{
+                position: relative;
+                top: 148px;
+                left: 42.5%;
+            }
+            
+            input{
+                position: relative;
+                top: 130px;
+                left: 36%;
+                width: 30%;
+                padding: 15px;
+                border-radius: 50px;
+                border: 1px solid #c9c9c9;
+                display: block; 
+                
+            }
+           
+            .submit{
+                width:140px;
+                margin: 30px 0 0 25px;
+                border-radius: 5px;
+                color: #696666;
+                padding: 10px;
+                
+            }
+            .pesquisa{
+                position: relative;
+                right: 44%;
+                bottom: 30px;
+                
+            }
+            
+            .pesquisa input{
+                cursor: pointer;
+                border: 1px solid transparent;
+                font-size: 1em;
+                margin: 20px 0;
+                outline: none:
+            }
+            .pesquisa input:hover{
+                border: 1px solid #696666;
+                color:black;
+                transition: all .5s;
+            }
+          
+            
+            .teclado{
+                position: relative;
+                top: 98px;
+                left: 60%;
+                margin-left: 20px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .microfone{
+                color: blue;
+            }
+            .grid{
+                font-size: 20px;
+            }
+            input:focus{
+                outline: 0;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <img src="google.png"  >
+        <ul>
+                <li><a  href="https://gmail.com">Gmail</a></li>
+                <li><a  href="https://www.google.com.br/imghp?hl=pt-BR&tab=ri&authuser=0&ogbl">Imagens</a></li>
+                <li class="grid icons"><a  href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+                <li class="usuario"><a   href="#"><img src="usuario.png"></a></li>
+            
+           </ul>
+        
+        <form action="http://www.google.com/search"   method="get">
+            <input class="principal" type="search" id="busca" name="q" autofocus>
+            <i class="teclado fa fa-keyboard-o" aria-hidden="true"></i>
+            <i class="microfone teclado fa fa-microphone" aria-hidden="true"></i>
+            
+            
+            <ul class="pesquisa">
+                <li><input class="submit" type="submit" id="busca" value="Pesquisa Google"></li>
+                <li><input class="submit" type="submit" id="busca" value="Estou com sorte" ></li>
+            </ul>
+        </form>
+    
+    </body>
+</html>

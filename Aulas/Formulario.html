@@ -1,0 +1,106 @@
+<!doctype html>
+<!-- DOCTYPE informa ao agente de usario a versao do HTML que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+    <title> Teste de estrutura </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Francisco Marcello">
+        <meta name=description content="nada">
+        <meta name="keywords" content="Teste,HTML">
+        
+        <style>
+
+            body{
+                background: #4B0082;
+                 
+            }
+            
+            .form-login{
+                width: 250px;
+                margin: 300px auto;
+                font-family: sans-serif;
+                
+                
+            }
+            .form-login fieldset{
+                background: #FFFAFA;
+            }
+            .form-login legend{
+                text-align: center;
+                margin-bottom: 10px;
+                color:black;
+                background: transparent;
+                font-size: 60px;
+            }
+            #user, #pass, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px;
+                font-size: 18px;
+                
+                
+            }
+            
+                
+            }
+            #user:focus, #pass:focus{
+                background: #ddd
+            }
+            .btn{
+                margin-top: 16px;
+                background: black;
+                color: white;
+                font-family: verdana;
+                border: none
+            }
+            .btn:hover{
+                background: green;
+                color:white;
+                transition: color 0.5s;
+                transition: background 1s;
+            }
+            
+            #user{
+                margin-bottom: 10px;
+                
+               
+            }
+            #user, label{
+                color: white;
+            }
+            #user ,text{
+                color: black;
+                
+            }
+            .salvar{
+                color: black;
+                
+                
+            }
+            #sal{
+                margin-top: 20px;
+                margin-left: 50px
+                
+            }
+            
+              
+            
+            
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post" class="form-login">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="user">Digite o seu usuario</label>
+                <input type="text" id="user" name="user" autofocus placeholder="Usuário" required>
+                <label for="pass">Digite a senha</label>
+                <input type="password" id="pass" name="pass" placeholder="senha" required>
+                <label class="salvar"><input type="checkbox" id="sal" >Salvar usuário</label>
+                 <input type="submit" value="logar" class="btn">
+            </fieldset>
+        
+        </form>
+    </body>
+</html>
